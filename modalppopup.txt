@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" style="height: 100%;">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Computer Science</title>
-    <link rel="shortcut icon" href="favicon.png" />
-    <link rel="stylesheet" href="style.css">
-	<style>
+<style>
 
 /* The Modal (background) */
 .modal {
@@ -47,50 +39,7 @@
   cursor: pointer;
 }
 </style>
-  </head>  
- 
-  <body style="height: 100%;">
-    <table width = 100%  cellspacing="2" cellpadding="0" border="1" bgcolor="DDDDDD" style="height: 100%;">
-      <tbody>
-        <tr>
-          <td style="height: 10%; vertical-align: center;">
-            <h1><img style=" vertical-align: center; image-rendering: crisp-edges;" src="_GIF_fin.gif" width="5%" height="100%">Welcome to the Infographic Center (© 1991)</h1>
-          </td>
-        </tr>
-        <tr>
-          <td style="height: 75%;  vertical-align: text-top;">
-            <p>Directory:</p>
-            <ul>
-              <li><a href="MIT/MIT.html">Massachusetts Institute of Technology</a></li>
-              <li><a href="UofW/Udub.html">University of Washington</a></li>
-              <li>University of California: Los Angeles</li>
-              <li>Lakeshore Technical College</li>
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td style="height: 75%;  vertical-align: text-top;">
-            <p>Interviews:</p>
-            <ul>
-              <li><a href="Interviews/Vint%20Cerf.html">Vint Cerf (Designed the Internet)</a></li>
- 
-            </ul>
-          </td>
-        </tr>
-        <tr>
-          <td style="height: 15%; ">
-            <p>Team:</p>
-            <ul>
-              <li>Michael Albert</li>
-              <li>Joel Hale</li>
-              <li>Ava Brodie</li>
-              <li>Mackenzie Talbott</li>
-            </ul>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    
+--------------------------------------------------------------------------------------------------
 <!-- Trigger/Open The Modal -->
 <button id="myBtn">Open Help</button>
 
@@ -105,7 +54,7 @@
       <tbody>
         <tr>
           <td width="10%">
-            <button onclick="window.history.back()"><img width="100%" src="NNBack.png" alt="Image description" /> <br>Back</button>
+            <button onclick="window.history.back();"><img width="100%" src="NNBack.png" alt="Image description" /> <br>Back</button>
           </td>
         </tr>
         <tr>
@@ -165,6 +114,3 @@ window.onclick = function(event) {
   }
 }
 </script>
-  </body>
-  
-</html>

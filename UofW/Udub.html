@@ -6,6 +6,47 @@
     <title>University of Washington</title>
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="stylesheet" href="style.css">
+	<style>
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
   </head>
   <body>
     <table width = 100%  cellspacing="2" cellpadding="0" border="1" bgcolor="DDDDDD" style="height: 100%;">
@@ -122,7 +163,7 @@
                       
                       
                       <td width="33%">                    
-
+                        <img src="UdubOneloop.gif" width ="100%" alt="Image description" />
                       </td>
                       
                       
@@ -138,6 +179,81 @@
         </tr>
       </tbody>
     </table>
+	
+	<!-- Trigger/Open The Modal -->
+<button id="myBtn">Open Help</button>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+   <div>
+    <table width = 10%  cellspacing="2" cellpadding="0" border="1" bgcolor="DDDDDD" style="height: 100%;">
+      <tbody>
+        <tr>
+          <td width="10%">
+            <button onclick="window.history.back();"><img width="100%" src="NNBack.png" alt="Image description" /> <br>Back</button>
+          </td>
+        </tr>
+        <tr>
+          <td width="10%">
+            <button onclick="findText()"><img width="100%" src="NNfind.png" alt="Image description" />Find</button>
+          </td>
+        </tr>
+        <tr>
+          <td width="10%">
+            <button onclick="window.print()"><img width="100%" src="NNprint(1).png" alt="Image description" /> <br>Print</button>
+          </td>
+        </tr>
+        <tr>
+          <td width="10%">
+            <button onclick="location.reload()"><img width="100%" src="NNReload(1).png" alt="Image description" /> <br>Reload</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+    <script>
+      function findText() {
+        var text = prompt("Please enter the text you want found", "Student Debt");
+        if (text != null) {
+          window.alert("String \x22" + text + "\x22 found? " + window.find(text));
+        }
+      }
+    </script>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
   </body>
 </html>
 
